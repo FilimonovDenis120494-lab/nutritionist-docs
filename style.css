@@ -1,0 +1,118 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.7;
+  color: #1a1a2e;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 48px 24px;
+  background: linear-gradient(135deg, #2d6a4f, #40916c);
+  color: #fff;
+}
+.header h1 { font-size: 28px; margin-bottom: 8px; }
+.header p { opacity: 0.85; font-size: 16px; }
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  flex-wrap: wrap;
+}
+.nav a {
+  color: #2d6a4f;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.nav a:hover, .nav a.active {
+  background: #d8f3dc;
+}
+
+/* Content */
+h1 { font-size: 26px; margin: 32px 0 8px; color: #1a1a2e; }
+h2 { font-size: 20px; margin: 32px 0 12px; color: #2d6a4f; border-bottom: 2px solid #d8f3dc; padding-bottom: 8px; }
+h3 { font-size: 17px; margin: 24px 0 8px; color: #333; }
+
+p { margin: 8px 0; }
+ul, ol { margin: 8px 0 8px 24px; }
+li { margin: 4px 0; }
+strong { color: #1a1a2e; }
+
+.meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+th, td {
+  padding: 10px 12px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+th { background: #d8f3dc; font-weight: 600; }
+tr:nth-child(even) { background: #f8f9fa; }
+
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+
+/* Index page cards */
+.cards {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+.card {
+  display: block;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-color: #40916c;
+}
+.card h3 { margin: 0 0 8px; color: #2d6a4f; font-size: 18px; }
+.card p { color: #666; font-size: 14px; margin: 0; }
+
+.contact {
+  margin-top: 40px;
+  padding: 24px;
+  background: #d8f3dc;
+  border-radius: 12px;
+  text-align: center;
+}
+.contact a { color: #2d6a4f; font-weight: 600; }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #999;
+  font-size: 13px;
+}
